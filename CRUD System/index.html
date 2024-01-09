@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Products</h1>
+        <div class="form">
+            <label for="productName">Product Name :</label>
+            <input type="text" name="productName" id="productName">
+            <span></span>
+            <label for="productPrice">Product Price :</label>
+            <input type="text" name="productPrice" id="productPrice">
+            <span></span>
+
+            <label for="productCategory">Product Cetagory :</label>
+            <input type="text" name="productCategory" id="productCategory">
+            <span></span>
+
+            <label for="productDesc">Product Description :</label>
+            <textarea name="productDesc" id="productDesc" cols="30" rows="10"></textarea>
+            <button id="btn" value="1">Save</button>
+        </div>
+        <div class="display_product">
+            <table border="1">
+                <thead>
+                    <tr>
+
+                        <th>product Name</th>
+                        <th>product Price</th>
+                        <th>product Category</th>
+                        <th>Product Description</th>
+                        <th>Operations</th>
+
+                    </tr>
+                </thead>
+                <tbody id="Products">
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
